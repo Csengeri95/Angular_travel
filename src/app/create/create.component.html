@@ -1,0 +1,21 @@
+<div class="divform">
+
+    <div class="form">
+        <h1>Create Ad</h1>
+        <label for="destination">Destination</label>
+        <input type="text" name="destination" id="destination" [(ngModel)]="this.createModel.destination">
+
+        <label for="date">Date</label>
+        <input type="text" name="date" id="date" [(ngModel)]="this.createModel.date">
+
+
+        <label for="username">Price</label>
+        <input type="number" name="price" id="price" [(ngModel)]="this.createModel.price">
+
+
+        <button (click)="this.service.create(this.createModel)">Create</button>
+
+    </div>
+
+
+</div>

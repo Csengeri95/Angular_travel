@@ -1,0 +1,16 @@
+<div class="divform">
+
+    <div class="form">
+        <h1>Login</h1>
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" [(ngModel)]="this.loginModel.userName">
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" [(ngModel)]="this.loginModel.password">
+
+        <button (click)="this.auth.login(this.loginModel)">Login</button>
+
+    </div>
+
+
+</div>

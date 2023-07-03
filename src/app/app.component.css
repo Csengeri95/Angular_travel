@@ -1,0 +1,17 @@
+nav {
+    height: 50px;
+    background: linear-gradient(145deg, #7eead5, #43d5ea);
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #000;
+    font-weight: 700;
+    padding: 15px;
+    cursor: pointer;
+}

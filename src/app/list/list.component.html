@@ -1,0 +1,22 @@
+<div class="container">
+    <h1>Advertisements</h1>
+    <div class="row" style="margin-top: 2rem;">
+        <div class="col-sm-5 mx-auto" *ngFor="let m of this.service.ads">
+            <div class="card mt-2">
+                <div class="card-body">
+                    <h5 class="card-title">Cél: {{m.destination}} </h5>
+
+                    <p class="card-text" *ngIf="m.owner?.firstName">
+                        Feladó: {{m.owner.firstName}} {{m.owner.lastName}}
+                    </p>
+
+                    <p class="card-text" *ngIf="m.owner?.firstName==null">
+                        Feladó: ismeretlen
+                    </p>
+
+                    <p class="card-text">Ár: {{m.price}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

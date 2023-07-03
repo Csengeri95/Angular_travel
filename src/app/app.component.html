@@ -1,0 +1,16 @@
+<nav *ngIf="this.auth.isLoggedIn()">
+    <a routerLink="list">Advertisements</a>
+    <a routerLink="create">Create</a>
+    <a (click)="this.auth.logout()">Logout</a>
+    <a><fa-icon [icon]="user"></fa-icon>
+        {{this.service.actualUser.firstName}} {{this.service.actualUser.lastName}} </a>
+</nav>
+
+
+<nav *ngIf="!this.auth.isLoggedIn()">
+    <a routerLink="list">Advertisements</a>
+    <a routerLink="login">Login</a>
+    <a routerLink="register">Registration</a>
+</nav>
+
+<router-outlet></router-outlet>

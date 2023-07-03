@@ -1,0 +1,26 @@
+<div class="divform">
+
+    <div class="form">
+        <h1>Registration</h1>
+        <label for="firstname">Firstname</label>
+        <input type="text" name="firstname" id="firstname" [(ngModel)]="this.registerModel.firstName">
+
+        <label for="lastname">Lastname</label>
+        <input type="text" name="lastname" id="lastname" [(ngModel)]="this.registerModel.lastName">
+
+
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" [(ngModel)]="this.registerModel.userName">
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" [(ngModel)]="this.registerModel.email">
+
+        <label for="password">Password</label>
+        <input type="text" name="password" id="password" [(ngModel)]="this.registerModel.password">
+
+        <button (click)="this.auth.register(this.registerModel)">Registration</button>
+
+    </div>
+
+
+</div>
